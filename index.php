@@ -1,0 +1,241 @@
+<!-- MySQL DB Name : if0_37801052_kelompok1
+	MySQL User Name : 	if0_37801052
+    MySQL Password : (Your vPanel Password)
+    MySQL Host Name : 	sql301.infinityfree.com -->
+
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<?php
+session_start();
+$message = '';
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+    unset($_SESSION['message']); // Hapus pesan setelah ditampilkan
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 1</title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+</head>
+<body>
+    <!-- Your HTML content here -->
+
+    <!-- <script>
+        <?php if ($message): ?>
+            swal("Informasi", "<?php echo $message; ?>", "<?php echo strpos($message, 'berhasil') !== false ? 'success' : 'error'; ?>");
+        <?php endif; ?>
+    </script>
+</body> -->
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 1</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+<!-- SweetAlert JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+</head>
+<body>
+    <header class="header navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand logo">Kelompok 1 <span>XII RPL</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="navbar-nav ms-auto">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About </a>
+                    <a href="#project" class="nav-link">Galery</a>
+                    <a href="#" class="nav-link">Product</a>
+                    <a href="#contact" class="nav-link">Contact Admin</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="home d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="home-content">
+                        <h1>Hi, It's <span>Onegroup</span></h1>
+                        <h3 class="text-animation">We are <span></span></h3>
+                        <p></p>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/twelverpl_official?igsh=dHpwbDM0OXZ0Z3Rv"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                    <a href="https://wa.me/6285798805443" target="_blank" class="btn btn-success">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="content-about">
+                <h2>About </h2>
+                <p>Kami adalah siswa kelas 12 Rekayasa Perangkat Lunak yang sedang mengerjakan proyek desain baju. Dalam
+                    kelompok kami, kami berfokus pada pembuatan desain baju yang kreatif dan menarik, yang mencerminkan
+                    tren terbaru dan selera pasar.
+                    Kami telah merancang berbagai model baju yang tidak hanya stylish, tetapi juga nyaman untuk
+                    dikenakan. Setiap desain dihasilkan melalui diskusi dan kolaborasi aktif antar anggota kelompok.
+                    Kami percaya bahwa inovasi dan keunikan adalah kunci untuk menarik perhatian calon pelanggan.
+
+                    Saat ini, kami berencana untuk meng-upload hasil desain kami ke website yang sedang kami bangun.
+                    Melalui platform ini, kami berharap dapat mempromosikan produk kami secara luas dan mendapatkan
+                    umpan balik yang konstruktif. Kami sangat antusias untuk berbagi karya kami dan be
+                    rharap dapat menjangkau lebih banyak orang dengan produk baju kami.</p>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="container">
+            <h2 class="mb-5 text-center">Gallery</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <img src="image/aziz.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Abdul Aziz</h5>
+                            <p class="card-text">Editor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <img src="image/adit.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Aditya Saputra</h5>
+                            <p class="card-text">Pemilik HP😃 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <img src="image/rizal.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Rizalallah</h5>
+                            <p class="card-text">Desainer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <img src="image/reni.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Reni Ramadani</h5>
+                            <p class="card-text"> Videografer </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <img src="image/abdul.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Abdul ripa</h5>
+                            <p class="card-text">Pembuat Laporan</p>
+                        </div>
+                    </div>
+                </div>
+                 <h1>Contoh Video</h1>
+    <video controls width="600">
+        <source src="image/video_tugas.mp4" type="video/mp4">
+        <source src="video-saya.ogg" type="video/ogg">
+        Browser Anda tidak mendukung tag video. Silakan gunakan browser yang lebih baru.
+    </video>
+            </div>
+    </section>
+   <section class="project" id="projects">
+    <div class="container">
+         <h2 class="mb-5 text-center">Product</h2>
+          <h3 class="mb-3 text-center">Untuk lebih detail lagi, klik gambar di bawah ini!</h3>
+         <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-5 mb-4">
+                    <div class="card h-100">
+                        <a href="product_detail.html">
+                            <img src="image/baju2.jpg" class="card-img-top" alt="Baju">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+   </section>
+   <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center">Contact Admin</h2>
+            <form action="process_contact.php" method="POST" class="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan nama anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukan alamat email anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" name="pesan" rows="5" placeholder="Masukan pesan" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </div>
+            </form>
+        </div>
+    </section>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-contact">
+                    <div class="social-links text-center">
+                        <a href="https://www.instagram.com/fathurrobbany_?igsh=czZ6amt0NTFpbTln"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/6285798805443"><i
+                                class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kelompok 1.</p>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // Memicu SweetAlert berdasarkan output dari PHP
+         <?php if (strpos($output, 'Pesan berhasil dikirim!') !== false): ?>
+             swal("Sukses!", "Pesan berhasil dikirim!", "success");
+         <?php elseif (strpos($output, 'Terjadi kesalahan saat mengirim pesan.') !== false): ?>
+             swal("Gagal!", "Terjadi kesalahan saat mengirim pesan.", "error");
+         <?php endif; ?>
+    </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
